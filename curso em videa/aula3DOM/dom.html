@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(14, 57, 201);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+        div{
+            padding: 10px;
+            background-color: rgb(255, 0, 0);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo DOM</h1>
+    <p>Primeiro paragrafo</p>
+
+    <p>Segunto paragrafo <strong>DOM</strong> </p>
+     
+    <div id = "vv">Clique em mim</div>
+
+    <script>
+        //esse é o DOM, ele consegue selecionar elementos e mudar eles, por exemplo posso mudar a cor de fundo por aqui
+       //primeiro vc tem que criar variaveis para manipula-los,  dá para selecionar elemntos de varias maneiras, no exemplo eu selecinei por tagnames, mas posso selecionar po id, por nome, etc... ou também por queryselector
+
+       var corpitxo = window.document.body
+
+       var di = window.document.getElementById('vv')
+
+       di.style.backgroundColor = 'blue'
+
+        //se for id é representada por #, se for classe sera . 
+
+        var bl =  window.document.querySelector('div#vv')
+        bl.style.color = 'red'
+       var titulo = window.document.getElementsByTagName('h1')[0]
+       corpitxo.style.backgroundColor = 'black'
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+
+
+
+        //para mostrar o que está no elemento na tela, exemplos
+
+
+
+        window.document.write('Esse é o ' + p1.innerText)
+        window.document.write('  Esse é o'+ p2.innerHTML)
+        window.document.write('   Hoje vamos estar '+ titulo.innerText)
+        //o inner text pega só o texto, enquanto o innerHtml pega atag mesmo, como um todo, por exempor o strong do p2, dá pa fazer um alert tambeém
+         
+        p1.style.color = 'black'
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLICIA FEDERAL</title>
+</head>
+<body>
+    <h1>VERIFICAÇÃO DE IDENTIDADE</h1>
+    Insira a sua nacionalidade <input type="text" name="nac" id="nac">
+    <input type="button" value="VERIFICAR" id="vr" onclick="veri()">
+    <div id="res"> </div>
+    <div id="rees"> </div>
+
+    <script>
+        function veri()
+        {
+            var n = window.document.getElementById('nac')        
+            var re = window.document.querySelector('div#res')
+            var ree = window.document.querySelector('div#rees')
+
+            re.innerHTML = `VOCÊ É DO ${n}`
+
+            if(n == "Brasil")
+            {
+                ree.innerHTML = `VOCÊ É BRASILEIRO`
+            }
+            else
+            {
+                ree.innerHTML = `VOCÊ É ESTRANGEIRO`
+            }
+
+        }
+
+    </script>
+</body>
+</html>

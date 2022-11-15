@@ -1,0 +1,31 @@
+body
+{
+    
+    font: normal 15pt Arial;
+    background-color: #959eeb;
+
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 550px;
+   /* height: 500px;*/
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+div#infoo{
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A FUKING DETRAN</title>
+    <style>
+        body
+        {
+            background-color: black;
+            font: normal 20px Arial;
+            color: white
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>VERIFICAÇÃO DA VELOCIDADE</h1>
+
+    Insira a velocidade: <input type="number" name="txvel" id="txvel"> km\h 
+    <input type="button" value="VERIFICAR" id="ver" onclick="ver()">
+    <div id="res"> </div>
+    <div id="ad"> </div>
+
+    <Script>
+        function ver()
+        {
+            var vel = window.document.querySelector('input#txvel')
+            var velo = Number(vel.value)
+            var resp = window.document.querySelector('div#res')
+            var adv = window.document.querySelector('div#ad')
+            resp.innerHTML = `A SUA VELOCIDADE É DE ${velo} km/h `
+
+            if(velo > 50)
+            {
+                adv.innerHTML = `PORAA, ACHA QUE TEM UMA VIDA EXTRA É FDP, SLOW DOWN`
+            }
+        }
+
+    </Script>
+</body>
+</html>

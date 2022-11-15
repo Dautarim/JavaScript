@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSTRADOR DE NUMERO</title>
+    <link rel="stylesheet" href="stilo.css">
+
+</head>
+<body>
+    <header>
+        <h1>GERADOR DE VECTOR DE NUMEROS</h1>
+        <p>Insira umma serie de numeros, e agente faz o gerenciamento...</p>
+    </header>
+
+    <section>
+
+        <div id="adicionar">
+
+          <p> Insira o numero.. de 1 á 100 <input type="number" name="nad" id="nad"></p>  
+          <p><input type="button" value="ADICIONAR" id="ad" onclick="add()"></p>
+
+        </div>
+
+        <div id="mos">
+             <select name="sel" id="sel" > <option value="Numeros..."> Numeros...</option> </select>
+            <p><input type="button" value="INSPECIONAR" id="insp" onclick="mostrar()"></p> 
+        </div>
+
+        <div id="res">
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p > &copy; Docinho</p>
+    </footer>
+
+    <script src="funiconalidaes.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+[
+
+{
+    "nome": "Dautarim",
+    "idade": 22,
+    "estado-de-trabalho": false,
+    "detalhes-de-trabalho":
+    {
+        "proficao": "Programdor",
+        "empresa": null
+    },
+
+    "hobies": ["videogame", "futebol", "fazer-drincs", "ler", "conversar"]
+}
+
+
+]

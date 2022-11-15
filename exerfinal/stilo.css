@@ -1,0 +1,48 @@
+
+body
+{
+
+    background-color: rgb(0, 150, 150);
+    font-family:Arial, Helvetica, sans-serif ;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+section
+{
+    
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+    color: black;
+    width: 600px;
+
+}
+
+div#adicionar
+{
+    background-color: rgb(161, 158, 158);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(99, 99, 88);
+
+}
+
+div#mos
+{
+    padding: 10px;
+}
+
+header
+{
+    text-shadow: 2px 2px 5px rgb(34, 33, 33);
+}
+
+footer
+{
+    text-shadow: 2px 2px 5px rgb(34, 33, 33);
+    font-style: italic;
+}

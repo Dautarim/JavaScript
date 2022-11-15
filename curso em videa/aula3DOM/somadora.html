@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMADOR</title>
+    <style>
+        body{
+            color: white;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#somador{
+            padding: 10px;
+            width: 600px;
+            height: 100px;
+            line-height: 100px;
+            background-color: rgb(255, 0, 255);
+        }
+       
+
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro somador</h1>
+    <div id="somador"> 
+        <input type="number" name = "1º Numero" id = "n1"> +
+        <input type="number" name = "2º Numero" id = "n2">
+        <input type="button" value="SOMAR" id="sm" onclick="soma()">
+
+        <div id= "resp"></div>
+    </div>
+   
+    <script>
+
+        function soma()
+        {
+        var n11 = document.getElementById('n1')
+        var n22 = document.getElementById('n2')
+        var pp = document.getElementById('resp')
+            var nn1 = Number(n11.value)
+            var nn2 = Number(n22.value)
+
+        var r = nn1 + nn2
+
+        pp.innerText =  `A soma é ${r} `
+
+        }
+    </script>
+
+</body>
+</html>

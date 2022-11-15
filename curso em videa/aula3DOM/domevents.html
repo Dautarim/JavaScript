@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black
+        }
+        div#vvv{
+          
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(255, 0, 200) ;
+            color: white;
+            width: 250px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="vvv" >
+        CLIQUE EM MIM
+    </div>
+<!--onclick="clicou()" onmouseenter="entrou()" onmouseleave="saiu()"-->
+    <script>
+//é assim que se chama um evento, eu pessoalmente prefiro aque comentei aí em cima ,dentro da tafg div
+    var v = window.document.getElementById('vvv')
+
+    v.addEventListener('click',clicou)
+    v.addEventListener('mouseenter', entrou)
+    v.addEventListener('mouseout', saiu)
+
+    function clicou()
+    {      
+        v.innerText = 'Baitola'
+        v.style.backgroundColor = 'red'
+    }
+
+    function entrou()
+    {
+        v.innerText = 'Aiinnn etrou com força'
+        
+    }
+
+    function saiu()
+    {
+        v.innerText = 'ohhhu'
+    }
+    </script>
+</body>
+
+
+</html>
