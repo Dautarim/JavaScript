@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="fetchar.js" defer></script>
+</head>
+<body>
+    <h1>Docebook</h1>
+    <p>Post...</p>
+
+    <div class="loading">
+        Loading...
+    </div>
+
+    <div class="post-container hiden" id="post-container">
+        <a href="fetch2.html">Home</a>
+        <div class="post" id="box-post">
+
+        </div>
+        <form>
+            <div class="email-box">
+                <label for="email">e-mail</label>
+                <input type="text" placeholder="Digite o seu e-mail..." required name="email" id="emailinput">
+            </div>
+
+            <div class="comentario-box">
+                <label for="coment">Comentario</label>
+                <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Deixe o seu comentario..."></textarea>
+            </div>
+
+            <input type="submit" id="submits" >
+        </form>
+    </div>
+
+    <div class="comentsContainer">
+
+    </div>
+
+</body>
+</html>
