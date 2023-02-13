@@ -1,5 +1,5 @@
-const pup = require('puppeteer')
 
+const pup = require('puppeteer');
 const url_mercado_livre = "https://www.mercadolivre.com.br/";
 const pesquisa = "macbook";
 const produtofinal = []
@@ -62,3 +62,5 @@ let c = 1;
     //await pagina.waitForTimeout(2000) //esperar um tempo nesse caso 2segundos antes de executar o procximo  comando
     await navegador.close();
 })();
+
+
